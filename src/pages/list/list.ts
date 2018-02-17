@@ -15,6 +15,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ListPage {
 
+  user:any = {
+    name: "Fernando",
+    email: "fernandosouza@gmail.com",
+    phone: "(19) 99615-8848",
+    companies: [  {id: 1, name:"Broto Legal"},
+                  {id: 1, name:"Ampliato"},
+                  {id: 1, name:"CI&T"},
+                  {id: 1, name:"InFive"}]
+  };
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
