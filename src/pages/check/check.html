@@ -1,0 +1,63 @@
+<!--
+  Generated template for the CheckPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Check</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+    <ion-item-group>
+      <ion-item-divider color="light">Company</ion-item-divider>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/icon/icoEmpresa.png">
+        </ion-avatar>
+        <ion-label>Define your company</ion-label>
+        <ion-select [(ngModel)]="company">
+          <div *ngFor="let item of companyOptions">
+            <ion-option>{{ item }}</ion-option>
+          </div>
+        </ion-select>
+      </ion-item>
+      <ion-item-divider color="light">Location</ion-item-divider>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/icon/location.png">
+        </ion-avatar>
+        <h3 STYLE="white-space:normal">{{ location }}</h3>
+      </ion-item>
+      <ion-item-divider color="light">Time</ion-item-divider>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/icon/time.png">
+        </ion-avatar>
+        <h1>{{ Hour }}:{{ Minute }}</h1>
+        <span></span>
+      </ion-item>
+      <!--<ion-item-divider color="light">Last Check</ion-item-divider>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/icon/favicon.ico">
+        </ion-avatar>
+        <h2>Check out at Infive</h2>
+        <span></span>
+      </ion-item>-->
+    </ion-item-group>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col style="text-align: center">
+        <ion-buttons>
+          <button ion-button full (click)="checkNow()">CHECK NOW</button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>
