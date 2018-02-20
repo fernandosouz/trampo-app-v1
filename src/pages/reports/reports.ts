@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+
 /**
  * Generated class for the ReportsPage page.
  *
@@ -14,8 +15,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'reports.html',
 })
 export class ReportsPage {
+  today:any;
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams) {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.today = new Date().toISOString();
+
   }
 
   ionViewDidLoad() {

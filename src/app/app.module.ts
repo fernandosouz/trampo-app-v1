@@ -18,6 +18,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AgmCoreModule } from '@agm/core';
 import { Geolocation } from '@ionic-native/geolocation';
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -34,7 +35,7 @@ import { Geolocation } from '@ionic-native/geolocation';
     IonicModule.forRoot(MyApp),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBMusX8ucyy6lPFHP3qDwDq61kqJfLXW58'
-    }),
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
